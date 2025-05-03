@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 int main()
 {
     char contour, filling;
@@ -33,5 +34,25 @@ int main()
         }
         cout << endl;
     }
+=======
+#include <iostream>
+using namespace std;
+
+int main() {
+    int spaceCount = 0;
+    char findCh = ' ';
+    string str;
+    
+    cout << "Введите строку: ";
+    getline(cin,str);
+    
+    for (int i = 0; i < str.length(); i++) {
+        if (str[i] == findCh) {
+            spaceCount++;
+        }
+    }
+    cout << endl;
+    cout << "Количество пробелов в строке:" << spaceCount;
+>>>>>>> 366039d51922bf012a0afd5169b01aaa780b6168
     return 0;
 }
